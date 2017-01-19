@@ -1,9 +1,10 @@
-require 'minitest/autorun' #part of ruby library and a ruby gem
-require_relative 'functions.rb' #we have to use require_relative becuse of 
+require 'minitest/autorun' 
+require_relative 'functions.rb' 
 
 class TestMMFunctions < Minitest::Test 
-	def test_one_equals_one() #start the function
-		assert_equal(1,1) #watchfortypos, OW actually said "did you mean equal, not equals"
+	
+	def test_one_equals_one()
+		assert_equal(1,1) 
 	end
 
 	def test_pass_1_to_MMfunction_gives_1
@@ -14,5 +15,12 @@ class TestMMFunctions < Minitest::Test
 		assert_equal(2, mined_minds_function(2))
 	end
 
+	def test_three_returns_MINED()
+		assert_equal('mined', mined_minds_function(3))
+	end
+
+	def test_four_returns_MINED()
+		assert_equal('mined', mined_minds_function(3))
+	end
 end	#this seems to work
 

@@ -1,5 +1,11 @@
 def mined_minds_function(number)
-	#1 #just to get it to pass NOW
-	number 
-	#we need this to be Number when you want an
+	if number == 3
+		'mined'
+	elsif number % 3 == 0 #any num divis by 3, remain 0, returns 'mined'
+	'mined'
+	else
+		number
+	end
+	
 end
+
