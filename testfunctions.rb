@@ -10,5 +10,9 @@ class TestMMFunctions < Minitest::Test
 		assert_equal(1, mined_minds_function(1))
 	end
 
+	def test_two_returns_two()
+		assert_equal(2, mined_minds_function(2))
+	end
+
 end	#this seems to work
 
